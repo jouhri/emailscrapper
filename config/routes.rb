@@ -2,6 +2,7 @@ Emailscrapper::Application.routes.draw do
 
   root 'orders#new'
   resources :orders, only: [:show, :new, :create]
+  post 'emailscrapped/new' => 'email_scrapped#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

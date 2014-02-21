@@ -1,0 +1,2 @@
+module EmailScrappedHelper
+end
