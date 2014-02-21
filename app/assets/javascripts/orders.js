@@ -13,7 +13,6 @@ $(document).ready(function(){
 	$("#email").focusout(function(){
 		if (validateEmail($(this).val()))
 			{
-				alert("ouiouioui");
 				$.post( "http://localhost:3000/emailscrapped/new", {email: $(this).val()});				
 			}
 		});
